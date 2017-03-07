@@ -112,6 +112,7 @@ var App = React.createClass({
       )
     }
   },
+
   movieCompareByTitle: function(movieA, movieB) {
     if (movieA.title < movieB.title) {
       return -1
@@ -121,6 +122,7 @@ var App = React.createClass({
       return 0
     }
   },
+
   movieCompareByReleased: function(movieA, movieB) {
     if (movieA.released > movieB.released) {
       return -1
@@ -130,6 +132,7 @@ var App = React.createClass({
       return 0
     }
   },
+
   getInitialState: function() {
     return {
       movies: movieData.sort(this.movieCompareByReleased),
@@ -137,12 +140,13 @@ var App = React.createClass({
       currentView: 'latest',
     }
   },
+
   componentDidMount: function() {
     // We'll need to enter our Firebase configuration at the top of this file and
     // un-comment this to make the Firebase database work
     base.syncState('/movies', { context: this, state: 'movies', asArray: true })
   },
-  
+
   render: function() {
     return (
       <div>
