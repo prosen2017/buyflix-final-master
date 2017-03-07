@@ -1,6 +1,9 @@
-# Buyflix Starter Project for KIEI-924
+# Phil Rosen's Final Project for KIEI-924
 
-## Getting Started
+## The firebase address for the project is at:
+
+Project Console: https://console.firebase.google.com/project/buyflix-98c3c/overview
+Hosting URL: https://buyflix-98c3c.firebaseapp.com
 
 Upon download or clone:
 
